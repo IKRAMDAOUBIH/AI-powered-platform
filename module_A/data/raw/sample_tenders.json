@@ -1,0 +1,42 @@
+[
+  {
+    "id": "AO-2026-001",
+    "title": "Travaux de construction d'un établissement scolaire",
+    "buyer": "Ministère de l'Éducation Nationale",
+    "region": "Souss-Massa",
+    "type": "travaux",
+    "estimated_budget": 2500000,
+    "deadline": "2026-12-15",
+    "source": "marchespublics.gov.ma"
+  },
+  {
+    "id": "AO-2026-002",
+    "title": "Fourniture de matériel informatique",
+    "buyer": "Université Ibn Zohr",
+    "region": "Souss-Massa",
+    "type": "fournitures",
+    "estimated_budget": 450000,
+    "deadline": "2026-12-20",
+    "source": "marchespublics.gov.ma"
+  },
+  {
+    "id": "AO-2026-003",
+    "title": "Maintenance des équipements informatiques",
+    "buyer": "Office National de l'Électricité",
+    "region": "Casablanca-Settat",
+    "type": "services",
+    "estimated_budget": 180000,
+    "deadline": "2026-12-10",
+    "source": "marchespublics.gov.ma"
+  },
+  {
+    "id": "AO-2026-001",
+    "title": "Travaux de construction d'un établissement scolaire",
+    "buyer": "Ministère de l'Éducation Nationale",
+    "region": "Souss-Massa",
+    "type": "travaux",
+    "estimated_budget": 2500000,
+    "deadline": "2026-12-15",
+    "source": "marchespublics.gov.ma"
+  }
+]

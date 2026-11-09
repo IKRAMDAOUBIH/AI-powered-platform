@@ -1,0 +1,23 @@
+
+{
+    "name": "Tech Solutions Maroc",
+    "domains": [
+        "Informatique"
+    ],
+    "preferred_types": [
+        "fournitures",
+        "services"
+    ],
+    "regions": [
+        "Souss-Massa",
+        "Casablanca-Settat"
+    ],
+    "min_budget": 100000,
+    "max_budget": 1000000,
+    "capital": 500000,
+    "annual_turnover": 2000000,
+    "qualifications": [
+        "maintenance informatique",
+        "fourniture matériel informatique"
+    ]
+}
