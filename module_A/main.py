@@ -26,8 +26,17 @@ print("Original number of tenders:", len(tenders))
 
 
 # 3. Adapt live data to our pipeline
+from urllib.parse import urlparse, parse_qs
+
 for tender in tenders:
-    tender["id"] = tender["reference"]
+    params = parse_qs(urlparse(tender.get("url", "")).query)
+    consultation_id = params.get("refConsultation", [None])[0]
+
+    tender["id"] = (
+        consultation_id
+        or tender.get("url")
+        or tender.get("reference")
+    )
 
 
 # 4. Clean data

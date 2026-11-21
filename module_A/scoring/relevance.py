@@ -68,14 +68,24 @@ def calculate_relevance(tender, company):
             score += 7.5
 
     # 5. Professional qualifications (25 points)
+        # 5. Professional qualifications (25 points)
     title_words = normalize_words(title)
+
+    best_match = 0
 
     for qualification in company["qualifications"]:
 
         qualification_words = normalize_words(qualification)
 
-        if qualification_words and qualification_words.issubset(title_words):
-            score += 25
-            break
+        if not qualification_words:
+            continue
 
+        matched_words = qualification_words.intersection(title_words)
+
+        match_ratio = len(matched_words) / len(qualification_words)
+
+        best_match = max(best_match, match_ratio)
+
+    score += 25 * best_match
+    
     return round(score, 2)
